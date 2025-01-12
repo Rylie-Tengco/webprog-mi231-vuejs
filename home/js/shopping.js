@@ -1,13 +1,11 @@
-  const app3 = Vue.createApp({
+const app3 = Vue.createApp({
     data() {
       return {
         itemName: null,
         itemNumber: null,
         itemImportant: false,
         shoppingList: [
-          { name: 'Tomatoes', number: 5, important: false, found: false },
-          { name: 'Bread', number: 1, important: false, found: false },
-          { name: 'Soap', number: 1, important: true, found: true }
+          { name: 'Tomatoes', number: 5, important: false }
         ]
       }
     },
@@ -16,8 +14,7 @@
         let item = {
           name: this.itemName,
           number: this.itemNumber,
-          important: this.itemImportant,
-          found: false
+          important: this.itemImportant
         }
         this.shoppingList.push(item)
         this.itemName = null
@@ -26,4 +23,4 @@
       }
     }
   })
-app3.mount('#app3')
+ app3.mount('#app3')
