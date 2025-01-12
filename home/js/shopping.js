@@ -5,7 +5,9 @@ const app3 = Vue.createApp({
         itemNumber: null,
         itemImportant: false,
         shoppingList: [
-          { name: 'Tomatoes', number: 5, important: false }
+          { name: 'Tomatoes', number: 5, important: false, found: false },
+          { name: 'Bread', number: 1, important: false, found: false },
+          { name: 'Soap', number: 1, important: true, found: true }
         ]
       }
     },
@@ -14,7 +16,8 @@ const app3 = Vue.createApp({
         let item = {
           name: this.itemName,
           number: this.itemNumber,
-          important: this.itemImportant
+          important: this.itemImportant,
+          found: false
         }
         this.shoppingList.push(item)
         this.itemName = null
@@ -23,4 +26,4 @@ const app3 = Vue.createApp({
       }
     }
   })
- app3.mount('#app3')
+app3.mount('#app3')
