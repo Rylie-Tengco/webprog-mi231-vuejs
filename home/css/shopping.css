@@ -3,25 +3,24 @@
       display: inline-block;
       padding: 0 20px;
     }
-    #app label, #app li {
+    #app label {
       padding: 5px;
-      border-radius: 5px;
     }
-    #app label:hover, #app li:hover {
+    #app label:hover {
       cursor: pointer;
       background-color: lightgray;
+      border-radius: 5px;
     }
     ul {
       list-style-type: none;
     }
     li {
+      border-radius: 5px;
+      padding: 5px;
       margin: 2px;
       background-color: rgb(211, 254, 211);
     }
     .impClass {
       background-color: rgb(255, 202, 202);
-    }
-    #ulFound li {
-      text-decoration: line-through;
-      background-color: rgb(230,230,230);
+      font-weight: bold;
     }
