@@ -1,6 +1,4 @@
-<template>
-<h1>Personal Profile Webpage</h1>
-<hr>
+ <template>
  <div class="grid-container">
         <div class="item1">
             <h2>About Me</h2>
