@@ -8,6 +8,8 @@
   <food-item2/>
   <food-item/>
   <personal-profile/>
+  <comment-form/>
+  <comment/>
   
 </template>
 
